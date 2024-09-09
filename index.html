@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud-systeme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        
+        <div class="new-note">
+            <div class="logo-container">
+                <img src="Godot_logo.svg" class="logo">
+            </div>
+            <input type="text" name="name" id="title" placeholder="Titre...">
+            <textarea name="content" id="content" placeholder="A quoi penses-tu ?"></textarea>
+            <div id="form-error"></div>
+        </div>
+
+        <div class="button-container">
+            <button class="add-btn" onclick="addNote()">Ajouter une pensée</button>
+        </div>
+        <div id="notes-wrapper"></div>
+
+    </main>
+
+
+    <footer><a href="#" target="_blank">
+        Moderne devs&copy; <span id="current_date"></span>
+    </a></footer>
+    
+    <script src="main.js"></script>
+    
+</body>
+</html>
